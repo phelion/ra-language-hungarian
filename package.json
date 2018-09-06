@@ -1,6 +1,6 @@
 {
     "name": "ra-language-hungarian",
-    "version": "2.2.0",
+    "version": "1.0.0",
     "description": "Hungarian messages for react-admin, the frontend framework for building admin applications on top of REST/GraphQL services",
     "main": "index.js",
     "repository": {

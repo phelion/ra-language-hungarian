@@ -1,3 +1,4 @@
+This package is under development, and is not published as an npm repo yet!
 # Hungarian Messages for React-Admin
 
 Hungarian messages for [react-admin](https://github.com/marmelab/react-admin), the frontend framework for building admin applications on top of REST/GraphQL services.

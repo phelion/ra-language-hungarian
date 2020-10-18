@@ -12,12 +12,11 @@ npm install --save ra-language-hungarian
 
 ```js
 import hungarianMessages from 'ra-language-hungarian';
+import polyglotI18nProvider from 'ra-i18n-polyglot';
 
-const messages = {
-    'hu': hungarianMessages,
-};
+const i18nProvider = polyglotI18nProvider(() => hungarianMessages, 'hu');
 
-<Admin locale="hu" messages={messages}>
+<Admin locale="hu" i18nProvider={i18nProvider}>
   ...
 </Admin>
 ```

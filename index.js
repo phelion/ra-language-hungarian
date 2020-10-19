@@ -13,17 +13,25 @@ module.exports = {
             edit: 'Szerkesztés',
             export: 'Exportálás',
             list: 'Lista',
-            refresh: 'Frissít',
+            refresh: 'Frissítés',
             remove_filter: 'Szűrő törlése',
             remove: 'Törlés',
             save: 'Mentés',
             show: 'Megtekint',
             sort: 'Rendezés',
             undo: 'Visszavonás',
+            confirm: 'Megerősítés',
+            search: 'Keresés',
+            unselect: 'Kijelölés törlése',
+            expand: 'Kiterjesztés',
+            close: 'Bezárás',
+            open_menu: 'Menü megnyitása',
+            close_menu: 'Menü bezárása',
         },
         boolean: {
             true: 'Igen',
             false: 'Nem',
+            null: ' ',
         },
         page: {
             create: '%{name} létrehozása',
@@ -34,6 +42,8 @@ module.exports = {
             loading: 'Betöltés',
             not_found: 'Nem található',
             show: '%{name} #%{id}',
+            empty: 'Nem létezik a %{name}.',
+            invite: 'Szeretne létrehozni egyet?',
         },
         input: {
             file: {
@@ -54,6 +64,10 @@ module.exports = {
                 single_missing:
                     'Egy kapcsolódó referencia adat nem elérhető',
             },
+            password: {
+                toggle_visible: 'Jelszó elrejtése',
+                toggle_hidden: 'Jelszó megjelenítése',
+            },
         },
         message: {
             about: 'Névjegy',
@@ -73,6 +87,8 @@ module.exports = {
             not_found:
                 'Elírta, vagy rossz URL-t adott meg.',
             yes: 'Igen',
+            unsaved_changes:
+            "Néhány változtatást nem mentettünk. Biztosan el akarja hagyni az oldalt?",
         },
         navigation: {
             no_results: 'Nincs egyetlen bejegyzés sem.',
@@ -84,6 +100,12 @@ module.exports = {
             page_range_info: '%{offsetBegin}-%{offsetEnd} a(z) %{total} darabból',
             next: 'Következő',
             prev: 'Előző',
+            page_rows_per_page: 'Sorok oldalanként:',
+        },
+        sort: {
+            sort_by: 'Sorrend %{field} %{order}',
+            ASC: 'növekvő',
+            DESC: 'csökkenő',
         },
         auth: {
             username: 'Felhasználónév',
@@ -102,6 +124,11 @@ module.exports = {
             data_provider_error:
                 'Adat szolgáltató hiba. Nézze meg a konzolt a részletekért',
             canceled: 'Folyamat megszakítva',
+            auth_check_error: 'A folytatáshoz jelentkezzen be',
+            user_menu: 'Profil',
+            i18n_error:
+            'Hiba történt a kiválasztott nyelv betöltése során.',
+            logged_out: 'A munkamenet befejeződött. Jelentkezzen be újra!',
         },
         validation: {
             required: 'Kitöltendő',

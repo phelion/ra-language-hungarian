@@ -108,6 +108,8 @@ module.exports = {
             DESC: 'csökkenő',
         },
         auth: {
+            auth_check_error: 'A folytatáshoz jelentkezzen be',
+            user_menu: 'Profil',
             username: 'Felhasználónév',
             password: 'Jelszó',
             sign_in: 'Bejelentkezés',

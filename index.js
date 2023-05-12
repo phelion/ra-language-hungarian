@@ -83,11 +83,17 @@ module.exports = {
         message: {
             about: 'Névjegy',
             are_you_sure: 'Biztos benne?',
+            auth_error: 'Hiba történt a hitelesítési token ellenőrzésekor.',
             bulk_delete_content:
-                'Biztosan törli a(z) %{name}? |||| Biztosan törli a(z) %{smart_count} ?',
+                'Biztosan törli a(z) %{name}? |||| Biztosan törli mind a %{smart_count} elemet?',
             bulk_delete_title:
                 '%{name} törlése |||| %{smart_count} %{name} törlése',
-            delete_content: 'Biztosan törli??',
+            bulk_update_content:
+                'Biztosan módosítja a(z) %{name}? |||| Biztosan módosítja mind a %{smart_count} elemet?',
+            bulk_update_title:
+                'Módosítás %{name} |||| Módosítás %{smart_count} %{name}',
+            clear_array_input: 'Biztosan törli a teljes lista tartalmát?',
+            delete_content: 'Biztosan törli ezt az elemet?',
             delete_title: '%{name} #%{id} törlése',
             details: 'Részletek',
             error:

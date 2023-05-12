@@ -165,5 +165,42 @@ module.exports = {
             oneOf: 'Ezek közül valamelyik legyen: %{options}',
             regex: 'Egyeznie kell az alábbi formátummal (regexp): %{pattern}',
         },
-    },
+        saved_queries: {
+            label: 'Mentett lekérdezések',
+            query_name: 'Lekérdezés neve',
+            new_label: 'Aktuális lekérdezés mentése...',
+            new_dialog_title: 'Aktuális lekérdezés mentése mint',
+            remove_label: 'Mentett lekérdezés törlése',
+            remove_label_with_name: '"%{name}" lekérdezés törlése',
+            remove_dialog_title: 'Törli a mentett lekérdezést?',
+            remove_message:
+                'Biztosan törölni szeretné az elemet a mentett lekérdezések listából?',
+            help: 'Lista szürése és a lekérdezés mentése későbbre',
+        },
+        configurable: {
+            customize: 'Testreszabás',
+            configureMode: 'Oldal tesztreszabása',
+            inspector: {
+                title: 'Inspector',
+                content: 'Mutasson az alkalmazás felhasználói felület elemeire a konfiguráláshoz',
+                reset: 'Beállítások visszaállítása',
+                hideAll: 'Összes elrejtése',
+                showAll: 'Összes megjelenítése',
+            },
+            Datagrid: {
+                title: 'Datagrid',
+                unlabeled: 'Jelöletlen oszlop #%{column}',
+            },
+            SimpleForm: {
+                title: 'Űrlap',
+                unlabeled: 'Jelöletlen beviteli mező #%{input}',
+            },
+            SimpleList: {
+                title: 'Lista',
+                primaryText: 'Elsődleges szöveg',
+                secondaryText: 'Másodlagos szöveg',
+                tertiaryText: 'Harmadlagos szöveg',
+            }
+        },
+    }
 };

@@ -115,9 +115,16 @@ module.exports = {
             page_out_from_end: 'Az utolsó oldalnál tovább nem lehet lapozni',
             page_out_from_begin: 'Az első olalnál előrrébb nem lehet lapozni',
             page_range_info: '%{offsetBegin}-%{offsetEnd} a(z) %{total} darabból',
+            partial_page_range_info:
+                '%{offsetBegin}-%{offsetEnd} a(z) több mint %{offsetEnd} darabból',
+            current_page: '%{page} oldal',
+            page: 'Ugrás a(z) %{page} oldalra',
+            first: 'Ugrás az első oldalra',
+            last: 'Ugrás az utolsó oldalra',
             next: 'Következő',
-            prev: 'Előző',
+            previous: 'Előző',
             page_rows_per_page: 'Sorok oldalanként:',
+            skip_nav: 'Ugrás a tartalomhoz',
         },
         sort: {
             sort_by: 'Sorrend %{field} %{order}',
@@ -143,8 +150,6 @@ module.exports = {
             data_provider_error:
                 'Adat szolgáltató hiba. Nézze meg a konzolt a részletekért',
             canceled: 'Folyamat megszakítva',
-            auth_check_error: 'A folytatáshoz jelentkezzen be',
-            user_menu: 'Profil',
             i18n_error:
                 'Hiba történt a kiválasztott nyelv betöltése során.',
             logged_out: 'A munkamenet befejeződött. Jelentkezzen be újra!',

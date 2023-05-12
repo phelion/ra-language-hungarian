@@ -85,7 +85,7 @@ module.exports = {
             are_you_sure: 'Biztos benne?',
             auth_error: 'Hiba történt a hitelesítési token ellenőrzésekor.',
             bulk_delete_content:
-                'Biztosan törli a(z) %{name}? |||| Biztosan törli mind a %{smart_count} elemet?',
+                'Biztosan törli a(z) %{name}? |||| Biztosan törli mind a(z) %{smart_count} elemet?',
             bulk_delete_title:
                 '%{name} törlése |||| %{smart_count} %{name} törlése',
             bulk_update_content:

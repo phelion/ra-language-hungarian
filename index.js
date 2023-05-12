@@ -32,7 +32,7 @@ module.exports = {
             close: 'Bezárás',
             open_menu: 'Menü megnyitása',
             close_menu: 'Menü bezárása',
-            update: 'Frissítés',
+            update: 'Módosítás',
             move_up: 'Felfelé mozgat',
             move_down: 'Lefelé mozgat',
             open: 'Megnyitás',

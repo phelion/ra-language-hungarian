@@ -6,15 +6,18 @@ module.exports = {
             back: 'Vissza',
             bulk_actions: '%{smart_count} kiválasztva',
             cancel: 'Mégsem',
+            clear_array_input: 'Lista ürítés',
             clear_input_value: 'Ürítés',
             clone: 'Másolás',
             create: 'Új',
+            create_item: '%{item} létrehozása',
             delete: 'Törlés',
             edit: 'Szerkesztés',
             export: 'Exportálás',
             list: 'Lista',
             refresh: 'Frissítés',
             remove_filter: 'Szűrő törlése',
+            remove_all_filters: 'Minden szűrő törlése',
             remove: 'Törlés',
             save: 'Mentés',
             show: 'Megtekint',
@@ -22,11 +25,19 @@ module.exports = {
             undo: 'Visszavonás',
             confirm: 'Megerősítés',
             search: 'Keresés',
+            select_all: 'Összes kijelölése',
+            select_row: 'Sor kijelölése',
             unselect: 'Kijelölés törlése',
             expand: 'Kiterjesztés',
             close: 'Bezárás',
             open_menu: 'Menü megnyitása',
             close_menu: 'Menü bezárása',
+            update: 'Módosítás',
+            move_up: 'Felfelé mozgat',
+            move_down: 'Lefelé mozgat',
+            open: 'Megnyitás',
+            toggle_theme: 'Téma váltás',
+            select_columns: 'Oszlopok',
         },
         boolean: {
             true: 'Igen',
@@ -72,11 +83,17 @@ module.exports = {
         message: {
             about: 'Névjegy',
             are_you_sure: 'Biztos benne?',
+            auth_error: 'Hiba történt a hitelesítési token ellenőrzésekor.',
             bulk_delete_content:
-                'Biztosan törli a(z) %{name}? |||| Biztosan törli a(z) %{smart_count} ?',
+                'Biztosan törli a(z) %{name}? |||| Biztosan törli mind a(z) %{smart_count} elemet?',
             bulk_delete_title:
                 '%{name} törlése |||| %{smart_count} %{name} törlése',
-            delete_content: 'Biztosan törli??',
+            bulk_update_content:
+                'Biztosan módosítja a(z) %{name}? |||| Biztosan módosítja mind a %{smart_count} elemet?',
+            bulk_update_title:
+                'Módosítás %{name} |||| Módosítás %{smart_count} %{name}',
+            clear_array_input: 'Biztosan törli a teljes lista tartalmát?',
+            delete_content: 'Biztosan törli ezt az elemet?',
             delete_title: '%{name} #%{id} törlése',
             details: 'Részletek',
             error:
@@ -88,7 +105,7 @@ module.exports = {
                 'Elírta, vagy rossz URL-t adott meg.',
             yes: 'Igen',
             unsaved_changes:
-            "Néhány változtatást nem mentettünk. Biztosan el akarja hagyni az oldalt?",
+                "Néhány változtatást nem mentettünk. Biztosan el akarja hagyni az oldalt?",
         },
         navigation: {
             no_results: 'Nincs egyetlen bejegyzés sem.',
@@ -98,9 +115,16 @@ module.exports = {
             page_out_from_end: 'Az utolsó oldalnál tovább nem lehet lapozni',
             page_out_from_begin: 'Az első olalnál előrrébb nem lehet lapozni',
             page_range_info: '%{offsetBegin}-%{offsetEnd} a(z) %{total} darabból',
+            partial_page_range_info:
+                '%{offsetBegin}-%{offsetEnd} a(z) több mint %{offsetEnd} darabból',
+            current_page: '%{page} oldal',
+            page: 'Ugrás a(z) %{page} oldalra',
+            first: 'Ugrás az első oldalra',
+            last: 'Ugrás az utolsó oldalra',
             next: 'Következő',
-            prev: 'Előző',
+            previous: 'Előző',
             page_rows_per_page: 'Sorok oldalanként:',
+            skip_nav: 'Ugrás a tartalomhoz',
         },
         sort: {
             sort_by: 'Sorrend %{field} %{order}',
@@ -126,10 +150,8 @@ module.exports = {
             data_provider_error:
                 'Adat szolgáltató hiba. Nézze meg a konzolt a részletekért',
             canceled: 'Folyamat megszakítva',
-            auth_check_error: 'A folytatáshoz jelentkezzen be',
-            user_menu: 'Profil',
             i18n_error:
-            'Hiba történt a kiválasztott nyelv betöltése során.',
+                'Hiba történt a kiválasztott nyelv betöltése során.',
             logged_out: 'A munkamenet befejeződött. Jelentkezzen be újra!',
         },
         validation: {
@@ -143,5 +165,42 @@ module.exports = {
             oneOf: 'Ezek közül valamelyik legyen: %{options}',
             regex: 'Egyeznie kell az alábbi formátummal (regexp): %{pattern}',
         },
-    },
+        saved_queries: {
+            label: 'Mentett lekérdezések',
+            query_name: 'Lekérdezés neve',
+            new_label: 'Aktuális lekérdezés mentése...',
+            new_dialog_title: 'Aktuális lekérdezés mentése mint',
+            remove_label: 'Mentett lekérdezés törlése',
+            remove_label_with_name: '"%{name}" lekérdezés törlése',
+            remove_dialog_title: 'Törli a mentett lekérdezést?',
+            remove_message:
+                'Biztosan törölni szeretné az elemet a mentett lekérdezések listából?',
+            help: 'Lista szürése és a lekérdezés mentése későbbre',
+        },
+        configurable: {
+            customize: 'Testreszabás',
+            configureMode: 'Oldal tesztreszabása',
+            inspector: {
+                title: 'Inspector',
+                content: 'Mutasson az alkalmazás felhasználói felület elemeire a konfiguráláshoz',
+                reset: 'Beállítások visszaállítása',
+                hideAll: 'Összes elrejtése',
+                showAll: 'Összes megjelenítése',
+            },
+            Datagrid: {
+                title: 'Datagrid',
+                unlabeled: 'Jelöletlen oszlop #%{column}',
+            },
+            SimpleForm: {
+                title: 'Űrlap',
+                unlabeled: 'Jelöletlen beviteli mező #%{input}',
+            },
+            SimpleList: {
+                title: 'Lista',
+                primaryText: 'Elsődleges szöveg',
+                secondaryText: 'Másodlagos szöveg',
+                tertiaryText: 'Harmadlagos szöveg',
+            }
+        },
+    }
 };
